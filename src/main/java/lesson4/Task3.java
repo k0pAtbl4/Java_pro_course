@@ -32,19 +32,19 @@ public class Task3 {
                 temp /= TEN;
             }
 
-            for(int g = 0; g < number.length; g++) {
-                if(breakPoint) {
+            for (int g = 0; g < number.length; g++) {
+                if (breakPoint) {
                     break;
                 }
-                for(int h = 0; h < number.length; h++) {
-                    if(g != h) {
-                        if(number[g] == number[h]) {
+                for (int h = 0; h < number.length; h++) {
+                    if (g != h) {
+                        if (number[g] == number[h]) {
                             breakPoint = true;
                             break;
                         }
                     }
                     if ((h == number.length - 1) && (g == number.length - 1)) {
-                        for(int t = number.length - 1; t >= 0; t--) {
+                        for (int t = number.length - 1; t >= 0; t--) {
                             System.out.print(number[t] + " ");
                         }
                         System.out.println();

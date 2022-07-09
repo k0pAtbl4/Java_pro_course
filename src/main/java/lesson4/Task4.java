@@ -5,12 +5,12 @@ public class Task4 {
         int k = 21;
         int n = 0;
         int number = 0;
-        while(n * n < k) {
+        while (n * n < k) {
             n++;
         }
-        for(int i = 0; i < n; i++) {
-            for(int j = 0; j < n; j++) {
-                if(number <= k) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (number <= k) {
                     System.out.print(number + "\t");
                     number++;
                 }
