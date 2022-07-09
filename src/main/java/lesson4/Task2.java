@@ -32,6 +32,6 @@ public class Task2 {
             }
             digitAm = 0;
         }
-        System.out.println(maxDigitAm + " -> " + maxDigit + "\n" + minDigitAm + " -> " + minDigit);
+        System.out.println("Max digit amount is " + maxDigitAm + " in the number " + maxDigit + "\nMin digit amount is " + minDigitAm + " in the number " + minDigit);
     }
 }
