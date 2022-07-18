@@ -1,12 +1,16 @@
-package lesson4;
+package lesson6.task3;
 
-import java.util.Arrays;
+public class ResultFinder {
+    int[] array;
 
-public class Task3 {
-    public static void main(String[] args) {
-        int[] array = {994, 645, 834, 4536456, 8888, 234, 54655465, 134, 12345678};
+    public ResultFinder(int[] array) {
+        this.array = array;
+    }
+
+    public boolean[] findResult() {
         int[] digitAm = new int[array.length];
         final int TEN = 10;
+        int[] number = new int[1];
         int digitNumb = 0, temp = 1;
         boolean breakPoint = false;
         boolean resultArray[] = new boolean[array.length];
@@ -25,7 +29,7 @@ public class Task3 {
 
         for (int i = 0; i < array.length; i++) {
             breakPoint = false;
-            int[] number = new int[digitAm[i]];
+            number = new int[digitAm[i]];
             temp = array[i];
 
             for (int k = 0; k < digitAm[i]; k++) {
@@ -48,12 +52,12 @@ public class Task3 {
                         for (int t = number.length - 1; t >= 0; t--) {
                             System.out.print(number[t] + " ");
                         }
-                        resultArray[i] = true;
                         System.out.println();
+                        resultArray[i] = true;
                     }
                 }
             }
         }
-        System.out.println(Arrays.toString(resultArray));
+        return resultArray;
     }
 }

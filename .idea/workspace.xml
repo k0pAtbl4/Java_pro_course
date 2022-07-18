@@ -5,11 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cae3c715-69b7-49e1-ad40-5a36bae2eb99" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/CarProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/Homework.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/task1/SubArrayFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/task1/Task1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/task2/FindLongest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/task2/FindShortest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/task2/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/task2/Task2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/task3/ResultFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/task3/Task3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/task4/ResultStrFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/task4/Task4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson6/task1/SubArrayFinderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson6/task2/FindLongestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson6/task2/FindShortestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson6/task3/ResultFinderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson6/task4/ResultStrFinderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson5/Lesson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson3/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson3/Task1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson4/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson4/Task3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="TestNG Test Class" />
       </list>
     </option>
   </component>
@@ -42,87 +57,126 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "TestNG",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG": ""
   }
-}</component>
-  <component name="RunManager" selected="Application.Homework">
-    <configuration name="Homework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson5.Homework" />
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="lesson6.task1" />
+      <recent name="lesson6" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="lesson6.task1" />
+      <recent name="lesson6.task4" />
+      <recent name="lesson6.task3" />
+      <recent name="lesson6.task2" />
+      <recent name="lesson6" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.ResultStrFinderTest.testResultStrFinder">
+    <configuration name="FindLongestTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Java_pro_course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson5.*" />
+          <option name="PATTERN" value="lesson6.task2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="lesson6.task2" />
+      <option name="MAIN_CLASS_NAME" value="lesson6.task2.FindLongestTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson5.Lesson" />
+    <configuration name="FindShortestTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Java_pro_course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson5.*" />
+          <option name="PATTERN" value="lesson6.task2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="lesson6.task2" />
+      <option name="MAIN_CLASS_NAME" value="lesson6.task2.FindShortestTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lesson4.Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson4.Task2" />
+    <configuration name="ResultFinderTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Java_pro_course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson4.*" />
+          <option name="PATTERN" value="lesson6.task3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="lesson6.task3" />
+      <option name="MAIN_CLASS_NAME" value="lesson6.task3.ResultFinderTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lesson4.Task3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson4.Task3" />
+    <configuration name="ResultStrFinderTest.testResultStrFinder" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Java_pro_course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson4.*" />
+          <option name="PATTERN" value="lesson6.task4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="lesson6.task4" />
+      <option name="MAIN_CLASS_NAME" value="lesson6.task4.ResultStrFinderTest" />
+      <option name="METHOD_NAME" value="testResultStrFinder" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lesson4.Task4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson4.Task4" />
+    <configuration name="SubArrayFinderTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Java_pro_course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson4.*" />
+          <option name="PATTERN" value="lesson6.task1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="lesson6.task1" />
+      <option name="MAIN_CLASS_NAME" value="lesson6.task1.SubArrayFinderTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Homework" />
-        <item itemvalue="Application.Lesson" />
-        <item itemvalue="Application.lesson4.Task4" />
-        <item itemvalue="Application.lesson4.Task3" />
-        <item itemvalue="Application.lesson4.Task2" />
+        <item itemvalue="TestNG.ResultStrFinderTest.testResultStrFinder" />
+        <item itemvalue="TestNG.ResultFinderTest" />
+        <item itemvalue="TestNG.FindShortestTest" />
+        <item itemvalue="TestNG.FindLongestTest" />
+        <item itemvalue="TestNG.SubArrayFinderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +197,7 @@
       <workItem from="1657297467130" duration="2713000" />
       <workItem from="1657383070392" duration="7035000" />
       <workItem from="1657642449916" duration="4854000" />
-      <workItem from="1657875645882" duration="1294000" />
+      <workItem from="1657875645882" duration="9753000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1656433480094</created>
@@ -229,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657643331182</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="commit">
+      <created>1657876962935</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1657876962935</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
