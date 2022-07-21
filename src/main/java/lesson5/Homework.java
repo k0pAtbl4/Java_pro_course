@@ -10,15 +10,27 @@ public class Homework {
                 new Car("toyota", "mk4", "1989", "green", 29000.0, 8670),
                 new Car("tesla", "s-cl", "2021", "white", 290000.0, 8270)};
 
+        System.out.println("=============================\nPrevious homework:\n=============================");
         CarProcessor proc = new CarProcessor();
-        Car[] firstResult = proc.getCarsWithMark(cars, "toyota");
         System.out.println("First result:");
-        proc.printCars(firstResult);
-        Car[] secondResult = proc.getCarsWithModel(cars, "mk4", 10);
+        Car[] firstResult = proc.getCarsWithMark(cars, "toyota");
+
         System.out.println("Second result:");
-        proc.printCars(secondResult);
-        Car[] thirdResult = proc.getCarsWithYear(cars, "2021", 210000.0);
+        Car[] secondResult = proc.getCarsWithModel(cars, "mk4", 10);
+
         System.out.println("Third result:");
-        proc.printCars(thirdResult);
+        Car[] thirdResult = proc.getCarsWithYear(cars, "2021", 210000.0);
+
+        System.out.println("=============================\nLast homework:\n=============================");
+
+        proc = new CarProcessor(cars);
+        System.out.println("First result:");
+        Car[] fourthResult = proc.getCarsWithMark("toyota");
+
+        System.out.println("Second result:");
+        Car[] fifthResult = proc.getCarsWithModel("mk4", 10);
+
+        System.out.println("Third result:");
+        Car[] sixthResult = proc.getCarsWithYear("2021", 210000.0);
     }
 }
