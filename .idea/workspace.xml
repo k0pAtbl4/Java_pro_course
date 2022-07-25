@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cae3c715-69b7-49e1-ad40-5a36bae2eb99" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/Figure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Triangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +163,8 @@
       <workItem from="1657875645882" duration="10173000" />
       <workItem from="1658394397997" duration="2653000" />
       <workItem from="1658510465997" duration="938000" />
-      <workItem from="1658752321629" duration="8119000" />
+      <workItem from="1658752321629" duration="8745000" />
+      <workItem from="1658778319255" duration="659000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1656433480094</created>
@@ -275,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658396767286</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="commit">
+      <created>1658760681545</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1658760681545</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

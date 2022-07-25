@@ -4,17 +4,29 @@ public class Triangle {
     Point a;
     Point b;
     Point c;
+    boolean rectangular;
+    boolean equilateral;
+    boolean isosceles;
+    boolean arbitrary;
 
     Triangle(Point aDot, Point bDot, Point cDot) {
-        a = new Point(aDot.x, aDot.y);
-        b = new Point(bDot.x, bDot.y);
-        c = new Point(cDot.x, cDot.y);
+        a = aDot;
+        b = bDot;
+        c = cDot;
+        rectangular = this.ifRectangular();
+        equilateral = this.ifEquilateral();
+        isosceles = this.ifIsosceles();
+        arbitrary = this.ifArbitrary();
     }
 
     Triangle(double x1, double y1, double x2, double y2, double x3, double y3) {
         a = new Point(x1, y1);
         b = new Point(x2, y2);
         c = new Point(x3, y3);
+        rectangular = this.ifRectangular();
+        equilateral = this.ifEquilateral();
+        isosceles = this.ifIsosceles();
+        arbitrary = this.ifArbitrary();
     }
 
     Triangle() {
@@ -72,17 +84,9 @@ public class Triangle {
             return true;
         } else {
             if (cathetusSum > hypotenuseSquared) {
-                if (cathetusSum - hypotenuseSquared < 0.01) {
-                    return true;
-                } else {
-                    return false;
-                }
+                return cathetusSum - hypotenuseSquared < 0.01;
             } else {
-                if (hypotenuseSquared - cathetusSum < 0.01) {
-                    return true;
-                } else {
-                    return false;
-                }
+                return hypotenuseSquared - cathetusSum < 0.01;
             }
         }
     }
