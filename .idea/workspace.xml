@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cae3c715-69b7-49e1-ad40-5a36bae2eb99" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson7/Task2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson7/Task3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/Figure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson5/CarProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson5/CarProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson5/Homework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson5/Homework.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,13 +72,26 @@
       <recent name="lesson6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task3">
+  <component name="RunManager" selected="Application.lesson8.homework1.Main">
     <configuration name="Homework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson5.Homework" />
       <module name="Java_pro_course" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lesson5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson8.Main" />
+      <module name="Java_pro_course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,48 +125,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultFinderTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="lesson8.homework1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson8.homework1.Main" />
       <module name="Java_pro_course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson6.task3.*" />
+          <option name="PATTERN" value="lesson8.homework1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson6.task3" />
-      <option name="MAIN_CLASS_NAME" value="lesson6.task3.ResultFinderTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResultStrFinderTest.testResultStrFinder" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Java_pro_course" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson6.task4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson6.task4" />
-      <option name="MAIN_CLASS_NAME" value="lesson6.task4.ResultStrFinderTest" />
-      <option name="METHOD_NAME" value="testResultStrFinder" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.lesson8.homework1.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Task3" />
         <item itemvalue="Application.Task2" />
         <item itemvalue="Application.Homework" />
-        <item itemvalue="TestNG.ResultStrFinderTest.testResultStrFinder" />
-        <item itemvalue="TestNG.ResultFinderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +166,9 @@
       <workItem from="1657383070392" duration="7035000" />
       <workItem from="1657642449916" duration="4854000" />
       <workItem from="1657875645882" duration="10173000" />
-      <workItem from="1658394397997" duration="2258000" />
+      <workItem from="1658394397997" duration="2653000" />
+      <workItem from="1658510465997" duration="938000" />
+      <workItem from="1658752321629" duration="8119000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1656433480094</created>
@@ -272,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658141618809</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="commit">
+      <created>1658396767286</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1658396767286</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
