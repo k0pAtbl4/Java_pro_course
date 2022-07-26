@@ -9,30 +9,6 @@ public class Triangle {
     private boolean isosceles;
     private boolean arbitrary;
 
-    public boolean isEquilateral() {
-        return equilateral;
-    }
-
-    public void setEquilateral(boolean equilateral) {
-        this.equilateral = equilateral;
-    }
-
-    public boolean isIsosceles() {
-        return isosceles;
-    }
-
-    public void setIsosceles(boolean isosceles) {
-        this.isosceles = isosceles;
-    }
-
-    public boolean isArbitrary() {
-        return arbitrary;
-    }
-
-    public void setArbitrary(boolean arbitrary) {
-        this.arbitrary = arbitrary;
-    }
-
     Triangle(Point aDot, Point bDot, Point cDot) {
         a = aDot;
         b = bDot;
@@ -190,5 +166,29 @@ public class Triangle {
 
     public void setRectangular(boolean rectangular) {
         this.rectangular = rectangular;
+    }
+
+    public boolean isEquilateral() {
+        return equilateral;
+    }
+
+    public void setEquilateral(boolean equilateral) {
+        this.equilateral = equilateral;
+    }
+
+    public boolean isIsosceles() {
+        return isosceles;
+    }
+
+    public void setIsosceles(boolean isosceles) {
+        this.isosceles = isosceles;
+    }
+
+    public boolean isArbitrary() {
+        return arbitrary;
+    }
+
+    public void setArbitrary(boolean arbitrary) {
+        this.arbitrary = arbitrary;
     }
 }
