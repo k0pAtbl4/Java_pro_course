@@ -21,7 +21,7 @@ public class Main {
 
 
         for (int i = 0; i < triangles.length; i++) {
-            if (triangles[i].rectangular) {
+            if (triangles[i].isRectangular()) {
                 maxArea = triangles[i].getArea();
                 minArea = maxArea;
                 maxPerimeter = triangles[i].getPerimeter();
@@ -30,7 +30,7 @@ public class Main {
             }
         }
         for (int i = 0; i < triangles.length; i++) {
-            if (triangles[i].rectangular) {
+            if (triangles[i].isRectangular()) {
                 if (triangles[i].getArea() > maxArea) {
                     maxArea = triangles[i].getArea();
                 }
@@ -53,7 +53,7 @@ public class Main {
 
         amount = 0;
         for (int i = 0; i < triangles.length; i++) {
-            if (triangles[i].equilateral) {
+            if (triangles[i].isEquilateral()) {
                 maxArea = triangles[i].getArea();
                 minArea = maxArea;
                 maxPerimeter = triangles[i].getPerimeter();
@@ -62,7 +62,7 @@ public class Main {
             }
         }
         for (int i = 0; i < triangles.length; i++) {
-            if (triangles[i].equilateral) {
+            if (triangles[i].isEquilateral()) {
                 if (triangles[i].getArea() > maxArea) {
                     maxArea = triangles[i].getArea();
                 }
@@ -85,7 +85,7 @@ public class Main {
 
         amount = 0;
         for (int i = 0; i < triangles.length; i++) {
-            if (triangles[i].isosceles) {
+            if (triangles[i].isIsosceles()) {
                 maxArea = triangles[i].getArea();
                 minArea = maxArea;
                 maxPerimeter = triangles[i].getPerimeter();
@@ -94,7 +94,7 @@ public class Main {
             }
         }
         for (int i = 0; i < triangles.length; i++) {
-            if (triangles[i].isosceles) {
+            if (triangles[i].isIsosceles()) {
                 if (triangles[i].getArea() > maxArea) {
                     maxArea = triangles[i].getArea();
                 }
@@ -117,7 +117,7 @@ public class Main {
 
         amount = 0;
         for (int i = 0; i < triangles.length; i++) {
-            if (triangles[i].arbitrary) {
+            if (triangles[i].isArbitrary()) {
                 maxArea = triangles[i].getArea();
                 minArea = maxArea;
                 maxPerimeter = triangles[i].getPerimeter();
@@ -126,7 +126,7 @@ public class Main {
             }
         }
         for (int i = 0; i < triangles.length; i++) {
-            if (triangles[i].arbitrary) {
+            if (triangles[i].isArbitrary()) {
                 if (triangles[i].getArea() > maxArea) {
                     maxArea = triangles[i].getArea();
                 }

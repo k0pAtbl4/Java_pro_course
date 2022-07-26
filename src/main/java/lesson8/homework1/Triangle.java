@@ -1,32 +1,56 @@
 package lesson8.homework1;
 
 public class Triangle {
-    Point a;
-    Point b;
-    Point c;
-    boolean rectangular;
-    boolean equilateral;
-    boolean isosceles;
-    boolean arbitrary;
+    private Point a;
+    private Point b;
+    private Point c;
+    private boolean rectangular;
+    private boolean equilateral;
+    private boolean isosceles;
+    private boolean arbitrary;
+
+    public boolean isEquilateral() {
+        return equilateral;
+    }
+
+    public void setEquilateral(boolean equilateral) {
+        this.equilateral = equilateral;
+    }
+
+    public boolean isIsosceles() {
+        return isosceles;
+    }
+
+    public void setIsosceles(boolean isosceles) {
+        this.isosceles = isosceles;
+    }
+
+    public boolean isArbitrary() {
+        return arbitrary;
+    }
+
+    public void setArbitrary(boolean arbitrary) {
+        this.arbitrary = arbitrary;
+    }
 
     Triangle(Point aDot, Point bDot, Point cDot) {
         a = aDot;
         b = bDot;
         c = cDot;
-        rectangular = this.ifRectangular();
-        equilateral = this.ifEquilateral();
-        isosceles = this.ifIsosceles();
-        arbitrary = this.ifArbitrary();
+        rectangular = this.ifRectangularFunction();
+        equilateral = this.ifEquilateralFunction();
+        isosceles = this.ifIsoscelesFunction();
+        arbitrary = this.ifArbitraryFunction();
     }
 
     Triangle(double x1, double y1, double x2, double y2, double x3, double y3) {
         a = new Point(x1, y1);
         b = new Point(x2, y2);
         c = new Point(x3, y3);
-        rectangular = this.ifRectangular();
-        equilateral = this.ifEquilateral();
-        isosceles = this.ifIsosceles();
-        arbitrary = this.ifArbitrary();
+        rectangular = this.ifRectangularFunction();
+        equilateral = this.ifEquilateralFunction();
+        isosceles = this.ifIsoscelesFunction();
+        arbitrary = this.ifArbitraryFunction();
     }
 
     Triangle() {
@@ -36,7 +60,7 @@ public class Triangle {
     }
 
     double getArea() {
-        double determinant = ((a.x - c.x) * (b.y - c.y)) - ((a.y - c.y) * (b.x - c.x));
+        double determinant = ((a.getX() - c.getX()) * (b.getY() - c.getY())) - ((a.getY() - c.getY()) * (b.getX() - c.getX()));
         if (determinant < 0) {
             determinant *= -1;
         }
@@ -52,7 +76,7 @@ public class Triangle {
     }
 
     //Если прямоугольный
-    boolean ifRectangular() {
+    boolean ifRectangularFunction() {
         double ab = a.getDistance(b);
         double bc = b.getDistance(c);
         double ac = a.getDistance(c);
@@ -92,7 +116,7 @@ public class Triangle {
     }
 
     //Если равносторонний
-    boolean ifEquilateral() {
+    boolean ifEquilateralFunction() {
         double ab = a.getDistance(b);
         double bc = b.getDistance(c);
         double ac = a.getDistance(c);
@@ -113,7 +137,7 @@ public class Triangle {
     }
 
     //Если равнобедренный
-    boolean ifIsosceles() {
+    boolean ifIsoscelesFunction() {
         double[] sides = {a.getDistance(b), b.getDistance(c), a.getDistance(c)};
         for (int i = 0; i < sides.length; i++) {
             for (int k = 0; k < sides.length; k++) {
@@ -128,11 +152,43 @@ public class Triangle {
     }
 
     //Еслии произвольный
-    boolean ifArbitrary() {
-        if (this.ifIsosceles() || this.ifRectangular() || this.ifEquilateral()) {
+    boolean ifArbitraryFunction() {
+        if (this.ifIsoscelesFunction() || this.ifRectangularFunction() || this.ifEquilateralFunction()) {
             return false;
         } else {
             return true;
         }
+    }
+
+    public Point getA() {
+        return a;
+    }
+
+    public void setA(Point a) {
+        this.a = a;
+    }
+
+    public Point getB() {
+        return b;
+    }
+
+    public void setB(Point b) {
+        this.b = b;
+    }
+
+    public Point getC() {
+        return c;
+    }
+
+    public void setC(Point c) {
+        this.c = c;
+    }
+
+    public boolean isRectangular() {
+        return rectangular;
+    }
+
+    public void setRectangular(boolean rectangular) {
+        this.rectangular = rectangular;
     }
 }

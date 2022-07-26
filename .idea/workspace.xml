@@ -7,6 +7,7 @@
     <list default="true" id="cae3c715-69b7-49e1-ad40-5a36bae2eb99" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson8/homework1/Triangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +165,8 @@
       <workItem from="1658394397997" duration="2653000" />
       <workItem from="1658510465997" duration="938000" />
       <workItem from="1658752321629" duration="8745000" />
-      <workItem from="1658778319255" duration="659000" />
+      <workItem from="1658778319255" duration="3266000" />
+      <workItem from="1658852439216" duration="375000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1656433480094</created>
@@ -278,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658760681545</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="commit">
+      <created>1658779230399</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1658779230399</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
