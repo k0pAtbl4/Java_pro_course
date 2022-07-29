@@ -44,6 +44,7 @@ public class CarParkTest {
         CarPark park = new CarPark(cars);
         Car[] expectedArray = {cars[0], cars[1], cars[3]};
         double maxSpeedAllowed = 230.0;
-        assertEquals(park.fitsRange(maxSpeedAllowed), expectedArray);
+        double minSpeed = 110.0;
+        assertEquals(park.fitsRange(minSpeed, maxSpeedAllowed), expectedArray);
     }
 }

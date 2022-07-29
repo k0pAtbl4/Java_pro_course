@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cae3c715-69b7-49e1-ad40-5a36bae2eb99" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson9/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson9/carTypes/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson9/carTypes/FreightCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson9/carTypes/SedanCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson9/carTypes/SportCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson9/service/CarPark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson9/service/CarParkFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson9/service/CarParkTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson9/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson9/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson9/service/CarPark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson9/service/CarPark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson9/service/CarParkFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson9/service/CarParkFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson9/service/CarParkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson9/service/CarParkTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,10 +158,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.CarParkTest" />
+        <item itemvalue="Application.lesson9.Main" />
         <item itemvalue="TestNG.CarParkTest.testFitsRange" />
         <item itemvalue="TestNG.CarParkTest.testFuelConsumptionSort" />
         <item itemvalue="TestNG.CarParkTest.testParkCost" />
-        <item itemvalue="Application.lesson9.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +189,8 @@
       <workItem from="1658778319255" duration="3266000" />
       <workItem from="1658852439216" duration="6886000" />
       <workItem from="1659034262863" duration="5508000" />
-      <workItem from="1659085318050" duration="6263000" />
+      <workItem from="1659085318050" duration="7123000" />
+      <workItem from="1659105673692" duration="323000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1656433480094</created>
@@ -328,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658853147138</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="commit">
+      <created>1659094418253</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1659094418253</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

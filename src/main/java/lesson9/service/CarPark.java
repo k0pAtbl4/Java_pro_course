@@ -36,10 +36,10 @@ public class CarPark implements CarParkFunctions {
     }
 
     @Override
-    public Car[] fitsRange(double maxSpeedAllowed) {
+    public Car[] fitsRange(double minSpeed, double maxSpeedAllowed) {
         Car[] resultArray = new Car[]{};
         for (Car car : cars) {
-            if (car.getMaxSpeed() <= maxSpeedAllowed) {
+            if (car.getMaxSpeed() <= maxSpeedAllowed && car.getMaxSpeed() >= minSpeed) {
                 resultArray = pushBack(car, resultArray);
             }
         }

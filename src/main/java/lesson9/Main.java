@@ -9,6 +9,7 @@ import lesson9.service.CarPark;
 public class Main {
     public static void main(String[] args) {
         double maxAllowedSpeed = 230;
+        double minSpeed = 110;
         Car[] cars = new Car[4];
         cars[0] = new FreightCar(160, 20000, 56000, "mark 8", "white", 30, 16000, 4.6);
         cars[1] = new SedanCar(220, 15000, 2300, "lancer 10", "black", 15, true);
@@ -22,8 +23,8 @@ public class Main {
         System.out.println("Sorted array of cars:\n");
         printCars(park.fuelConsumptionSort());
 
-        System.out.println("Cars that fit the range (0 - " + maxAllowedSpeed + " km/h):\n");
-        Car[] fitsTheRange = park.fitsRange(maxAllowedSpeed);
+        System.out.println("Cars that fit the range (" + minSpeed + " - " + maxAllowedSpeed + " km/h):\n");
+        Car[] fitsTheRange = park.fitsRange(minSpeed, maxAllowedSpeed);
         printCars(fitsTheRange);
 
         System.out.println("Car park cost: " + park.parkCost());

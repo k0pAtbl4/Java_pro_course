@@ -7,5 +7,5 @@ public interface CarParkFunctions {
 
     Car[] fuelConsumptionSort();
 
-    Car[] fitsRange(double maxSpeedAllowed);
+    Car[] fitsRange(double minSpeed, double maxSpeedAllowed);
 }
