@@ -1,14 +1,12 @@
 package lesson10.flowerShop;
 
-import lesson10.bouquetParts.Accessory;
-import lesson10.bouquetParts.Flower;
 import lesson10.bouquetParts.Bouquet;
 import lesson10.exception.InvalidStemLengthException;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class FlowerShop implements FlowerShopModel {
+public class FlowerShop {
     private Bouquet[] bArray;
 
     public FlowerShop() {
@@ -33,13 +31,13 @@ public class FlowerShop implements FlowerShopModel {
                         switch (choose) {
                             case 1:
                                 try {
-                                    addFlower();
+                                    bArray[bArray.length - 1].addFlower();
                                 } catch (InvalidStemLengthException e) {
                                     System.out.println(e.getMessage());
                                 }
                                 break;
                             case 2:
-                                addAccessory();
+                                bArray[bArray.length - 1].addAccessory();
                                 break;
                             case 3:
                                 bArray[bArray.length - 1].printBouquet();
@@ -51,12 +49,15 @@ public class FlowerShop implements FlowerShopModel {
                                 Arrays.sort(bArray[bArray.length - 1].getFlowers());
                                 bArray[bArray.length - 1].printBouquet();
                                 break;
+                            case 6:
+                                bArray[bArray.length - 1].findFlowerByStemLength();
+                                break;
                             default:
-                                if(choose != 6) {
+                                if (choose != 7) {
                                     System.out.println("Incorrect number. Try again");
                                 }
                         }
-                    } while (choose != 6);
+                    } while (choose != 7);
                     break;
                 case 2:
                     for (Bouquet bouquet : bArray) {
@@ -64,45 +65,11 @@ public class FlowerShop implements FlowerShopModel {
                     }
                     break;
                 default:
-                    if(choose != 3) {
+                    if (choose != 3) {
                         System.out.println("Incorrect number. Try again");
                     }
             }
         } while (choose != 3);
-    }
-
-    public void addFlower() throws InvalidStemLengthException {
-        Scanner scan = new Scanner(System.in);
-        Flower[] temp = new Flower[bArray[bArray.length - 1].getFlowers().length + 1];
-        System.arraycopy(bArray[bArray.length - 1].getFlowers(), 0, temp, 0, bArray[bArray.length - 1].getFlowers().length);
-        temp[temp.length - 1] = new Flower();
-        System.out.println("Name:");
-        temp[temp.length - 1].setName(scan.nextLine());
-        System.out.println("Days till death:");
-        temp[temp.length - 1].setDays(scan.nextInt());
-        System.out.println("Price:");
-        temp[temp.length - 1].setPrice(scan.nextInt());
-        System.out.println("Stem length:");
-        int stem = scan.nextInt();
-        if (stem <= 0) {
-            stem = 1;
-            throw new InvalidStemLengthException("Incorrect stem length");
-        } else {
-            temp[temp.length - 1].setSteamLength(stem);
-        }
-        bArray[bArray.length - 1].setFlowers(temp);
-    }
-
-    public void addAccessory() {
-        Scanner scan = new Scanner(System.in);
-        Accessory[] temp = new Accessory[bArray[bArray.length - 1].getAccessories().length + 1];
-        System.arraycopy(bArray[bArray.length - 1].getAccessories(), 0, temp, 0, bArray[bArray.length - 1].getAccessories().length);
-        temp[temp.length - 1] = new Accessory();
-        System.out.println("Name:");
-        temp[temp.length - 1].setName(scan.nextLine());
-        System.out.println("Price:");
-        temp[temp.length - 1].setPrice(scan.nextInt());
-        bArray[bArray.length - 1].setAccessories(temp);
     }
 
     public static void mainMenuPrint() {
@@ -117,6 +84,7 @@ public class FlowerShop implements FlowerShopModel {
                 4. Calculate current bouquet cost
                 5. Sort flowers in current
                    bouquet by stem length
-                6. Back""");
+                6. Find flowers by stem length
+                7. Back""");
     }
 }
