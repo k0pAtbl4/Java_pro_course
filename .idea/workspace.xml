@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cae3c715-69b7-49e1-ad40-5a36bae2eb99" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson11/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson11/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson11/MainTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson10/bouquetParts/Bouquet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson10/bouquetParts/Bouquet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson10/flowerShop/FlowerShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson10/flowerShop/FlowerShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson10/flowerShop/FlowerShopModel.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="TestNG Test Class" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -62,33 +62,20 @@
       <recent name="lesson6" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="lesson11" />
       <recent name="lesson9.service" />
       <recent name="lesson6.task1" />
       <recent name="lesson6.task4" />
       <recent name="lesson6.task3" />
-      <recent name="lesson6.task2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.lesson10.Main">
-    <configuration name="LessonPractise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practise.LessonPractise" />
+  <component name="RunManager" selected="TestNG.MainTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson11.Main" />
       <module name="Java_pro_course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practise.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="lesson09.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson09.Main" />
-      <module name="Java_pro_course" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson09.carTypes.*" />
+          <option name="PATTERN" value="lesson11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarParkTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CarParkTest.testParkCost" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Java_pro_course" />
       <extension name="coverage">
         <pattern>
@@ -117,8 +104,26 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson9.service" />
+      <option name="PACKAGE_NAME" value="lesson09.service" />
       <option name="MAIN_CLASS_NAME" value="lesson09.service.CarParkTest" />
+      <option name="METHOD_NAME" value="testParkCost" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Java_pro_course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson11" />
+      <option name="MAIN_CLASS_NAME" value="lesson11.MainTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -126,17 +131,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarParkTest.testFitsRange" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.testMainStart" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Java_pro_course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson09.service.*" />
+          <option name="PATTERN" value="lesson11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson9.service" />
-      <option name="MAIN_CLASS_NAME" value="lesson09.service.CarParkTest" />
-      <option name="METHOD_NAME" value="testFitsRange" />
+      <option name="PACKAGE_NAME" value="lesson11" />
+      <option name="MAIN_CLASS_NAME" value="lesson11.MainTest" />
+      <option name="METHOD_NAME" value="testMainStart" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -146,10 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MainTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="TestNG.MainTest.testMainStart" />
+        <item itemvalue="TestNG.CarParkTest.testParkCost" />
         <item itemvalue="Application.lesson10.Main" />
-        <item itemvalue="TestNG.CarParkTest" />
-        <item itemvalue="Application.lesson09.Main" />
-        <item itemvalue="TestNG.CarParkTest.testFitsRange" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +186,10 @@
       <workItem from="1659085318050" duration="7123000" />
       <workItem from="1659105673692" duration="17213000" />
       <workItem from="1659298326320" duration="2348000" />
-      <workItem from="1659301023090" duration="990000" />
+      <workItem from="1659301023090" duration="1181000" />
+      <workItem from="1659716438305" duration="1310000" />
+      <workItem from="1659869667483" duration="20741000" />
+      <workItem from="1660061550869" duration="9211000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1656433480094</created>
@@ -336,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659300572149</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="commit">
+      <created>1659302169593</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1659302169593</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,5 +372,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Java_pro_course$Main.ic" NAME="Main Coverage Results" MODIFIED="1659874765568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>lesson11.*</FILTER>
+    </SUITE>
   </component>
 </project>
