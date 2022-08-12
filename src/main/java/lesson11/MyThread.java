@@ -20,7 +20,7 @@ public class MyThread extends Thread {
         }
         boolean isSimple = true;
         for (int i = 0; i < numberArray.length; i++) {
-            for (int g = 2; g < numberArray[i]; g++) {
+            for (int g = 2; g <= numberArray[i] / 2; g++) {
                 if (numberArray[i] % g == 0) {
                     isSimple = false;
                     break;
