@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cae3c715-69b7-49e1-ad40-5a36bae2eb99" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson11/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson11/MyThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson11/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson11/Result.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson11/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson11/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson11/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson11/MyThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
       <recent name="lesson6.task3" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MainTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson11.Main" />
       <module name="Java_pro_course" />
@@ -151,8 +151,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MainTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="TestNG.MainTest" />
         <item itemvalue="TestNG.MainTest.testMainStart" />
         <item itemvalue="TestNG.CarParkTest.testParkCost" />
         <item itemvalue="Application.lesson10.Main" />
@@ -189,7 +189,8 @@
       <workItem from="1659301023090" duration="1181000" />
       <workItem from="1659716438305" duration="1310000" />
       <workItem from="1659869667483" duration="20741000" />
-      <workItem from="1660061550869" duration="9211000" />
+      <workItem from="1660061550869" duration="9377000" />
+      <workItem from="1660298692089" duration="3734000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1656433480094</created>
@@ -352,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659302169593</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="commit">
+      <created>1660230874773</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1660230874773</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

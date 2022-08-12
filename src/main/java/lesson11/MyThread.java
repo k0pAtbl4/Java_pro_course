@@ -1,39 +1,37 @@
 package lesson11;
 
 public class MyThread extends Thread {
-    private final int[] array;
     private final int start;
     private final int end;
-    private final int threadNumber;
 
-    public MyThread(int[] array, int start, int end, int threadNumber) {
-        this.array = array;
+    public MyThread(int start, int end) {
         this.start = start;
         this.end = end;
-        this.threadNumber = threadNumber;
     }
 
     @Override
     public void run() {
+        int[] numberArray = new int[end - start + 1];
+        int[] resultArray = new int[0];
+        int temp = start;
+        for(int i = 0; i < numberArray.length; i++) {
+            numberArray[i] = temp;
+            temp++;
+        }
         boolean isSimple = true;
-        for (int i = start; i <= end; i++) {
-            for (int g = 2; g < array[i]; g++) {
-                if (array[i] % g == 0) {
+        for (int i = 0; i < numberArray.length; i++) {
+            for (int g = 2; g < numberArray[i]; g++) {
+                if (numberArray[i] % g == 0) {
                     isSimple = false;
                     break;
                 }
             }
             if (isSimple) {
-                while (true) {
-                    if (Main.getCurrentPriority() == threadNumber || threadNumber == 0) {
-                        Main.setResultArray(pushBack(array[i], Main.getResultArray()));
-                        break;
-                    }
-                }
+                resultArray = pushBack(numberArray[i], resultArray);
             }
             isSimple = true;
         }
-        Main.setCurrentPriority(threadNumber + 1);
+        Result.addToResultArray(resultArray);
     }
 
     public int[] pushBack(int a, int[] NumberArray) {
@@ -52,9 +50,5 @@ public class MyThread extends Thread {
             System.out.println("Cannot push number back");
         }
         return NumberArray;
-    }
-
-    public int[] getArray() {
-        return array;
     }
 }

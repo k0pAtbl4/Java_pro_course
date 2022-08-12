@@ -5,8 +5,6 @@ import java.util.Scanner;
 
 public class Main {
     private static final Scanner scan = new Scanner(System.in);
-    private static int[] resultArray;
-    private static int currentPriority;
 
     public static void main(String[] args) throws InterruptedException {
         int from, to, threadAmount;
@@ -26,7 +24,7 @@ public class Main {
         int numbersForThread;
 
         //формируем массив чисел в заданном диапазоне
-        resultArray = new int[0];
+        Result result = new Result();
         int[] numberArray = new int[to - from + 1];
         for (int i = from; i <= to; i++) {
             numberArray[i - from] = i;
@@ -47,7 +45,7 @@ public class Main {
         MyThread[] thread = new MyThread[threadAmount];
 
         for (int i = 0; i < threadAmount; i++) {
-            thread[i] = new MyThread(numberArray, start, end, i);
+            thread[i] = new MyThread(numberArray[start], numberArray[end]);
             int temp = start;
             start += end - start + 1;
             end += end - temp + 1;
@@ -66,29 +64,14 @@ public class Main {
         }
 
         //выводим результат на экран
-        for (int i = 0; i < resultArray.length; i++) {
-            if (i % 100 != 0) {
-                System.out.print(resultArray[i] + " ");
+        System.out.println("Results:");
+        for (int i = 0; i < Result.getResultArray().length; i++) {
+            if ((i % 30 != 0) || (i == 0)) {
+                System.out.print(Result.getResultArray()[i] + " ");
             } else {
                 System.out.println();
             }
         }
-        return Main.getResultArray();
-    }
-
-    public static int[] getResultArray() {
-        return resultArray;
-    }
-
-    public static void setResultArray(int[] resultArray) {
-        Main.resultArray = resultArray;
-    }
-
-    public static int getCurrentPriority() {
-        return currentPriority;
-    }
-
-    public static void setCurrentPriority(int currentPriority) {
-        Main.currentPriority = currentPriority;
+        return Result.getResultArray();
     }
 }
