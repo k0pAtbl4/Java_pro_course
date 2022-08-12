@@ -3,10 +3,12 @@ package lesson11;
 public class MyThread extends Thread {
     private final int start;
     private final int end;
+    private final Result result;
 
-    public MyThread(int start, int end) {
+    public MyThread(int start, int end, Result result) {
         this.start = start;
         this.end = end;
+        this.result = result;
     }
 
     @Override
@@ -31,7 +33,7 @@ public class MyThread extends Thread {
             }
             isSimple = true;
         }
-        Result.addToResultArray(resultArray);
+        result.addToResultArray(resultArray);
     }
 
     public int[] pushBack(int a, int[] NumberArray) {

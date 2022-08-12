@@ -23,14 +23,13 @@ public class Main {
         int numbersForThread;
 
         //формируем массив чисел в заданном диапазоне
-        Result result = new Result();
         int[] numberArray = new int[to - from + 1];
         for (int i = from; i <= to; i++) {
             numberArray[i - from] = i;
         }
 
         int start = 0;
-        int end = 0;
+        int end;
 
         //рассчитываем количество проверяемых чисел для каждого потока
         if (numberArray.length % threadAmount != 0) {
@@ -42,9 +41,10 @@ public class Main {
 
         //формируем массив потоков
         MyThread[] thread = new MyThread[threadAmount];
+        Result result = new Result();
 
         for (int i = 0; i < threadAmount; i++) {
-            thread[i] = new MyThread(numberArray[start], numberArray[end]);
+            thread[i] = new MyThread(numberArray[start], numberArray[end], result);
             int temp = start;
             start += end - start + 1;
             end += end - temp + 1;
@@ -64,13 +64,13 @@ public class Main {
 
         //выводим результат на экран
         System.out.println("Results:");
-        for (int i = 0; i < Result.getResultArray().length; i++) {
+        for (int i = 0; i < result.getResultArray().length; i++) {
             if ((i % 30 != 0) || (i == 0)) {
-                System.out.print(Result.getResultArray()[i] + " ");
+                System.out.print(result.getResultArray()[i] + " ");
             } else {
                 System.out.println();
             }
         }
-        return Result.getResultArray();
+        return result.getResultArray();
     }
 }
