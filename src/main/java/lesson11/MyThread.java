@@ -19,15 +19,15 @@ public class MyThread extends Thread {
             temp++;
         }
         boolean isSimple = true;
-        for (int i = 0; i < numberArray.length; i++) {
-            for (int g = 2; g <= numberArray[i] / 2; g++) {
-                if (numberArray[i] % g == 0) {
+        for (int j : numberArray) {
+            for (int g = 2; g <= j / 2; g++) {
+                if (j % g == 0) {
                     isSimple = false;
                     break;
                 }
             }
             if (isSimple) {
-                resultArray = pushBack(numberArray[i], resultArray);
+                resultArray = pushBack(j, resultArray);
             }
             isSimple = true;
         }
