@@ -21,8 +21,8 @@ public class MainTest {
 
     boolean subArrayCheck(int[] mainArray, int[] subArray) {
         int correctNumberAmount = 1;
-        if(mainArray.length > subArray.length) {
-            for(int i = 0; i < mainArray.length; i++) {
+        if (mainArray.length > subArray.length) {
+            for (int i = 0; i < mainArray.length; i++) {
                 for (int value : subArray) {
                     if (mainArray[i] == value) {
                         for (int j = 1; j < subArray.length; j++) {

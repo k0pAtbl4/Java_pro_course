@@ -62,6 +62,7 @@ public class Main {
             thread[i].join();
         }
 
+
         //выводим результат на экран
         System.out.println("Results:");
         for (int i = 0; i < result.getResultArray().length; i++) {

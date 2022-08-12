@@ -16,7 +16,7 @@ public class MyThread extends Thread {
         int[] numberArray = new int[end - start + 1];
         int[] resultArray = new int[0];
         int temp = start;
-        for(int i = 0; i < numberArray.length; i++) {
+        for (int i = 0; i < numberArray.length; i++) {
             numberArray[i] = temp;
             temp++;
         }
