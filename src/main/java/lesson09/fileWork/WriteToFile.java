@@ -8,11 +8,8 @@ import java.io.PrintWriter;
 public class WriteToFile {
     private final String pathToFile;
 
-    public WriteToFile(String pathToFile, boolean delete) throws IOException {
+    public WriteToFile(String pathToFile) throws IOException {
         this.pathToFile = pathToFile;
-        if (delete) {
-            clearTheFile(pathToFile);
-        }
     }
 
     public void FileWrite(String text) {
@@ -22,13 +19,5 @@ public class WriteToFile {
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
-    }
-
-    public static void clearTheFile(String fileName) throws IOException {
-        FileWriter fwOb = new FileWriter(fileName, false);
-        PrintWriter pwOb = new PrintWriter(fwOb, false);
-        pwOb.flush();
-        pwOb.close();
-        fwOb.close();
     }
 }

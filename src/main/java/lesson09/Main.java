@@ -17,7 +17,7 @@ public class Main {
         double minSpeed = 110;
 
         ReadFromFile read = new ReadFromFile("D:\\polytechnic\\Java cars.txt");
-        WriteToFile write = new WriteToFile("D:\\polytechnic\\Java cars result.txt", true);
+        WriteToFile write = new WriteToFile("D:\\polytechnic\\Java cars result.txt");
 
         String oneLine = read.fileRead();
         String[] lines = oneLine.split(";\r\n");
@@ -25,7 +25,7 @@ public class Main {
         String[][] carsInStr = new String[lines.length][];
         Car[] cars = new Car[lines.length];
 
-        for(int i = 0; i < lines.length; i++) {
+        for (int i = 0; i < lines.length; i++) {
             carsInStr[i] = lines[i].split(", ");
             System.out.println(Arrays.toString(carsInStr[i]));
             switch (carsInStr[i][0]) {
