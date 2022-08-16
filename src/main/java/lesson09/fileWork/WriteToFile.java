@@ -1,14 +1,12 @@
 package lesson09.fileWork;
 
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 public class WriteToFile {
     private final String pathToFile;
 
-    public WriteToFile(String pathToFile) throws IOException {
+    public WriteToFile(String pathToFile) {
         this.pathToFile = pathToFile;
     }
 
