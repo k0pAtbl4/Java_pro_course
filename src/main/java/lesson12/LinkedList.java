@@ -18,7 +18,7 @@ public class LinkedList<T> {
     }
 
     public void pushBack(T data) {
-        Node<T> newNode = new Node<T>(data);
+        Node<T> newNode = new Node<>(data);
         newNode.setNext(null);
 
         if (ifEmpty()) {
@@ -34,14 +34,14 @@ public class LinkedList<T> {
     }
 
     public void pushForward(T data) {
-        Node<T> newNode = new Node<T>(data);
+        Node<T> newNode = new Node<>(data);
         newNode.setNext(head);
         head = newNode;
     }
 
     public void insert(T data, int index) {
         if (index < getListLength() && index >= 0) {
-            Node<T> newNode = new Node<T>(data);
+            Node<T> newNode = new Node<>(data);
             Node<T> current = head;
 
             if (index != 0) {
@@ -69,7 +69,7 @@ public class LinkedList<T> {
     public void deleteLast() {
         Node<T> iterator = head;
         Node<T> previous = iterator;
-        while(iterator.getNext() != null) {
+        while (iterator.getNext() != null) {
             previous = iterator;
             iterator = iterator.getNext();
         }
@@ -77,7 +77,7 @@ public class LinkedList<T> {
     }
 
     public void deleteByIndex(int index) {
-        if(!ifEmpty()) {
+        if (!ifEmpty()) {
             int i = 0;
             if (index == 0) {
                 deleteFirst();
@@ -88,7 +88,7 @@ public class LinkedList<T> {
                 return;
             }
             Node<T> iterator = head;
-            Node<T> previous = iterator;
+            Node<T> previous;
             do {
                 previous = iterator;
                 iterator = iterator.getNext();
@@ -110,10 +110,10 @@ public class LinkedList<T> {
     }
 
     public void swap(int index1, int index2) {
-        if(!ifEmpty()) {
+        if (!ifEmpty()) {
             int i = 0;
             Node<T> iterator1 = head;
-            Node<T> previous1 = iterator1;
+            Node<T> previous1;
             do {
                 previous1 = iterator1;
                 iterator1 = iterator1.getNext();
@@ -122,7 +122,7 @@ public class LinkedList<T> {
 
             int k = 0;
             Node<T> iterator2 = head;
-            Node<T> previous2 = iterator2;
+            Node<T> previous2;
             do {
                 previous2 = iterator2;
                 iterator2 = iterator2.getNext();
