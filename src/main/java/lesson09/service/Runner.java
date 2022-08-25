@@ -71,7 +71,7 @@ public class Runner {
         toWrite += printCars(fitsTheRange);
 
         toWrite += "Car park cost: " + park.parkCost();
-        write.FileWrite(toWrite);
+        write.fileWrite(toWrite);
     }
 
     public double getMaxAllowedSpeed() {

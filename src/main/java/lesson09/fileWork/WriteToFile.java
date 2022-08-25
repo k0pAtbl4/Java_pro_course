@@ -10,7 +10,7 @@ public class WriteToFile {
         this.pathToFile = pathToFile;
     }
 
-    public void FileWrite(String text) {
+    public void fileWrite(String text) {
         try (FileOutputStream fos = new FileOutputStream(pathToFile)) {
             byte[] buffer = text.getBytes();
             fos.write(buffer, 0, buffer.length);
