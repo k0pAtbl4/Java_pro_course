@@ -2,6 +2,9 @@ package lesson09.service;
 
 import lesson09.carTypes.Car;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class CarPark implements CarParkFunctions {
     private Car[] cars;
 
@@ -18,6 +21,22 @@ public class CarPark implements CarParkFunctions {
             sum += car.getPrice();
         }
         return sum;
+    }
+
+    public void interfaceFuelSort() {
+        Arrays.sort(cars, new Comparator<Car>() {
+            @Override
+            public int compare(Car o1, Car o2) {
+                return Double.compare(o1.getFuelConsumption(), o2.getFuelConsumption());
+            }
+        });
+    }
+    public void lambdaFuelSort() {
+        Arrays.sort(cars, (o1, o2) -> Double.compare(o1.getFuelConsumption(), o2.getFuelConsumption()));
+    }
+
+    public void methodFuelSort() {
+        Arrays.sort(cars, Comparator.comparingDouble(Car::getFuelConsumption));
     }
 
     @Override
