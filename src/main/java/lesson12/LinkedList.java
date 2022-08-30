@@ -159,8 +159,4 @@ public class LinkedList<T> {
     public Node<T> getHead() {
         return head;
     }
-
-    public void setHead(Node<T> head) {
-        this.head = head;
-    }
 }
