@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cae3c715-69b7-49e1-ad40-5a36bae2eb99" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson12/LinkedListIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson14/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson14/service/CarPark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson14/service/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson15/InfixToPostfixTranslator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson15/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +68,7 @@
       <recent name="lesson6.task4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.lesson14.Main">
+  <component name="RunManager" selected="Application.lesson15.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson13.Main" />
       <module name="Java_pro_course" />
@@ -97,6 +95,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="lesson15.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson15.Main" />
+      <module name="Java_pro_course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LinkedListTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Java_pro_course" />
       <extension name="coverage">
@@ -108,24 +119,6 @@
       <option name="PACKAGE_NAME" value="lesson12" />
       <option name="MAIN_CLASS_NAME" value="lesson12.LinkedListTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedListTest.testGetListLength" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Java_pro_course" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson12.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson12" />
-      <option name="MAIN_CLASS_NAME" value="lesson12.LinkedListTest" />
-      <option name="METHOD_NAME" value="testGetListLength" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -152,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.lesson15.Main" />
         <item itemvalue="Application.lesson14.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="TestNG.LinkedListTest" />
         <item itemvalue="TestNG.LinkedListTest.testIfEmpty" />
-        <item itemvalue="TestNG.LinkedListTest.testGetListLength" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +193,9 @@
       <workItem from="1661436830270" duration="3580000" />
       <workItem from="1661462732602" duration="172000" />
       <workItem from="1661769390417" duration="4270000" />
-      <workItem from="1661861805937" duration="2385000" />
+      <workItem from="1661861805937" duration="2611000" />
+      <workItem from="1661894251555" duration="2228000" />
+      <workItem from="1661963008348" duration="3314000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1656433480094</created>
@@ -461,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661852430478</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="commit">
+      <created>1661864366898</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1661864366898</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
