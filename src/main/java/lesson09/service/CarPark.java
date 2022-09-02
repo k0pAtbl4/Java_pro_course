@@ -3,7 +3,10 @@ package lesson09.service;
 import lesson09.carTypes.Car;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Comparator;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class CarPark implements CarParkFunctions {
     private Car[] cars;
@@ -16,66 +19,28 @@ public class CarPark implements CarParkFunctions {
 
     @Override
     public double parkCost() {
-        double sum = 0;
-        for (Car car : cars) {
-            sum += car.getPrice();
-        }
-        return sum;
-    }
-
-    public void interfaceFuelSort() {
-        Arrays.sort(cars, new Comparator<Car>() {
-            @Override
-            public int compare(Car o1, Car o2) {
-                return Double.compare(o1.getFuelConsumption(), o2.getFuelConsumption());
-            }
-        });
-    }
-    public void lambdaFuelSort() {
-        Arrays.sort(cars, (o1, o2) -> Double.compare(o1.getFuelConsumption(), o2.getFuelConsumption()));
-    }
-
-    public void methodFuelSort() {
-        Arrays.sort(cars, Comparator.comparingDouble(Car::getFuelConsumption));
+        return Arrays.stream(cars).map(Car::getPrice).reduce(Double::sum).orElse(0.0);
     }
 
     @Override
     public Car[] fuelConsumptionSort() {
-        Car[] carsCopy = cars;
-        for (int k = 0; k < carsCopy.length; k++) {
-            for (int i = 1; i < carsCopy.length; i++) {
-                if (carsCopy[i - 1].getFuelConsumption() > carsCopy[i].getFuelConsumption()) {
-                    Car temp = carsCopy[i - 1];
-                    carsCopy[i - 1] = carsCopy[i];
-                    carsCopy[i] = temp;
-                }
-            }
-        }
-        return carsCopy;
+        cars = Arrays.stream(cars).sorted(this::compareByFuel).toArray(Car[]::new);
+        return cars;
+    }
+
+    public int compareByFuel(Car car1, Car car2) {
+        return Double.compare(car1.getFuelConsumption(), car2.getFuelConsumption());
     }
 
     @Override
     public Car[] fitsRange(double minSpeed, double maxSpeedAllowed) {
-        Car[] resultArray = new Car[]{};
-        for (Car car : cars) {
-            if (car.getMaxSpeed() <= maxSpeedAllowed && car.getMaxSpeed() >= minSpeed) {
-                resultArray = pushBack(car, resultArray);
-            }
-        }
-        return resultArray;
+        return Arrays.stream(cars).filter(car -> car.getMaxSpeed() <= maxSpeedAllowed &&
+                car.getMaxSpeed() >= minSpeed).toArray(Car[]::new);
     }
 
-    private Car[] pushBack(Car car, Car[] carArray) {
-        Car[] resultArray = new Car[carArray.length + 1];
-        arrayCopy(carArray, resultArray);
-        resultArray[resultArray.length - 1] = car;
-        return resultArray;
-    }
-
-    private void arrayCopy(Car[] copyFromArray, Car[] copyToArray) {
-        for (int i = 0; i < Math.min(copyFromArray.length, copyToArray.length); i++) {
-            copyToArray[i] = copyFromArray[i];
-        }
+    @Override
+    public String toString() {
+        return Arrays.stream(cars).map(Object::toString).collect(Collectors.joining(", "));
     }
 
     public Car[] getCars() {

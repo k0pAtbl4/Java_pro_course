@@ -1,16 +1,10 @@
 package lesson09;
 
 import lesson09.carTypes.Car;
-import lesson09.carTypes.FreightCar;
-import lesson09.carTypes.SedanCar;
-import lesson09.carTypes.SportCar;
-import lesson09.fileWork.ReadFromFile;
-import lesson09.fileWork.WriteToFile;
-import lesson09.service.CarPark;
 import lesson09.service.Runner;
 
 import java.io.IOException;
-import java.util.Arrays;
+
 
 public class Main {
     public static void main(String[] args) throws IOException {

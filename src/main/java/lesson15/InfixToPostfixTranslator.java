@@ -21,7 +21,7 @@ public class InfixToPostfixTranslator {
         String postExpression = "";
         String digits = "0123456789";
 
-        for(int i = 0; i < expressionPart.length; i++) {
+        for (int i = 0; i < expressionPart.length; i++) {
             if (digits.contains(expressionPart[i])) {
                 postExpression += expressionPart[i] + " ";
             } else if (expressionPart[i].equals("(")) {
@@ -59,7 +59,7 @@ public class InfixToPostfixTranslator {
                 Double left = stack.pop();
                 Double right = stack.pop();
                 Double result = 0.0;
-                switch(part) {
+                switch (part) {
                     case "*" -> result = left * right;
                     case "/" -> result = left / right;
                     case "+" -> result = left + right;

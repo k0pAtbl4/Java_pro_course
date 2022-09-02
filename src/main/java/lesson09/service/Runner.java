@@ -55,16 +55,6 @@ public class Runner {
 
         toWrite += "Sorted array of cars:\n\n";
         toWrite += printCars(park.fuelConsumptionSort());
-        park.interfaceFuelSort();
-        toWrite += "Sorted by interface:\n\n";
-        toWrite += Arrays.toString(park.getCars()) + "\n";
-        park.lambdaFuelSort();
-        toWrite += "Sorted by lambda:\n\n";
-        toWrite += Arrays.toString(park.getCars()) + "\n";
-        park.methodFuelSort();
-        toWrite += "Sorted by method:\n\n";
-        toWrite += Arrays.toString(park.getCars()) + "\n";
-
 
         toWrite += "Cars that fit the range (" + minSpeed + " - " + maxAllowedSpeed + " km/h):\n";
         Car[] fitsTheRange = park.fitsRange(minSpeed, maxAllowedSpeed);
