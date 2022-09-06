@@ -17,7 +17,7 @@ public class StringWorker {
     public void wordCount() {
         String[] words = new String[0];
         String copy = str;
-        if(copy != null) {
+        if (copy != null) {
             copy = copy.replace(", ", " ").replace(". ", " ");
             words = copy.split(" ");
         }
@@ -35,14 +35,14 @@ public class StringWorker {
         String[] words = new String[0];
         Pattern pat;
         Matcher mat;
-        if(str != null) {
+        if (str != null) {
             words = str.split(" ");
         }
-        for(int i = 0; i < words.length; i++) {
+        for (int i = 0; i < words.length; i++) {
             pat = Pattern.compile(words[i]);
             mat = pat.matcher(str);
             char[] temp = str.toCharArray();
-            while(mat.find()) {
+            while (mat.find()) {
                 if (mat.start() + index < temp.length) {
                     temp[mat.start() + index] = symbol;
                     str = "";
@@ -57,9 +57,9 @@ public class StringWorker {
     public void sameSymbolEndStart() {
         Pattern pat = Pattern.compile("[ !,.]");
         String[] array = pat.split(str);
-        for(int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             char[] temp = array[i].toCharArray();
-            if(temp.length > 0) {
+            if (temp.length > 0) {
                 if (temp[0] == temp[temp.length - 1]) {
                     System.out.print(array[i] + " ");
                 }
@@ -71,7 +71,7 @@ public class StringWorker {
         Pattern pat = Pattern.compile("[!,.?:]");
         Matcher mat = pat.matcher(str);
         int count = 0;
-        while(mat.find()) {
+        while (mat.find()) {
             count++;
         }
         return count;
