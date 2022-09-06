@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cae3c715-69b7-49e1-ad40-5a36bae2eb99" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson16/StringWorker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson09/service/CarPark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson09/service/CarPark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson16/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson16/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,7 @@
       <recent name="lesson6.task4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.lesson09.Main">
+  <component name="RunManager" selected="Application.lesson16.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson13.Main" />
       <module name="Java_pro_course" />
@@ -120,30 +121,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="lesson16.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson16.Main" />
       <module name="Java_pro_course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson12.*" />
+          <option name="PATTERN" value="lesson16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson12" />
-      <option name="MAIN_CLASS_NAME" value="lesson12.LinkedListTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.lesson16.Main" />
         <item itemvalue="Application.lesson09.Main" />
         <item itemvalue="Application.lesson15.Main" />
         <item itemvalue="Application.lesson14.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="TestNG.LinkedListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +186,9 @@
       <workItem from="1661769390417" duration="4270000" />
       <workItem from="1661861805937" duration="2611000" />
       <workItem from="1661894251555" duration="2228000" />
-      <workItem from="1661963008348" duration="4873000" />
+      <workItem from="1661963008348" duration="5194000" />
+      <workItem from="1662135778233" duration="1983000" />
+      <workItem from="1662446759425" duration="5668000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1656433480094</created>
@@ -464,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662124219962</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="commit">
+      <created>1662125773366</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1662125773366</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,6 +490,26 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/lesson16/StringWorker.java</url>
+          <line>56</line>
+          <properties class="lesson16.StringWorker" method="sameSymbolEndStart">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lesson16/StringWorker.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Java_pro_course$Main.ic" NAME="Main Coverage Results" MODIFIED="1659874765568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
