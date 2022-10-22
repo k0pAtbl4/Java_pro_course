@@ -29,7 +29,7 @@ public class Repository {
 
         String orderStr = "";
         String dateStr = "";
-        while(resultSet.next()) {
+        while (resultSet.next()) {
             orderStr = resultSet.getString("order");
             dateStr = resultSet.getString("date");
         }
@@ -37,14 +37,14 @@ public class Repository {
         LocalDate date = LocalDate.parse(dateStr, formatter);
 
         String[] orderArray = orderStr.split(",");
-        for(int i = 0; i < orderArray.length; i++) {
+        for (int i = 0; i < orderArray.length; i++) {
             String productName = orderArray[i];
             int productAmount = 0;
 
             query = "SELECT * FROM shop." + Const.ITEM_TABLE + " WHERE " +
                     Const.ITEM_TABLE + ".product = '" + productName + "'";
             resultSet = st.executeQuery(query);
-            while(resultSet.next()) {
+            while (resultSet.next()) {
                 productAmount = resultSet.getInt("amount");
             }
 
@@ -53,12 +53,12 @@ public class Repository {
             resultSet = st.executeQuery(query);
             String description = "";
             String cost = "";
-            while(resultSet.next()) {
+            while (resultSet.next()) {
                 description = resultSet.getString("description");
                 cost = resultSet.getString("cost");
             }
 
-            Product p = new Product(productName, description, (int)Integer.parseInt(cost));
+            Product p = new Product(productName, description, (int) Integer.parseInt(cost));
             ProductInfo pi = new ProductInfo(number, p, productAmount);
             list.add(pi);
         }
@@ -77,7 +77,7 @@ public class Repository {
         Statement st = cp.getDbConnection().createStatement();
         ResultSet resultSet = st.executeQuery(query);
 
-        while(resultSet.next()) {
+        while (resultSet.next()) {
             list.add(resultSet.getInt("order_number"));
         }
         return list;
@@ -101,7 +101,7 @@ public class Repository {
         Statement st = cp.getDbConnection().createStatement();
         ResultSet resultSet = st.executeQuery(query.toString());
 
-        while(resultSet.next()) {
+        while (resultSet.next()) {
             resultList.add(resultSet.getInt("id"));
         }
         return resultList;
@@ -124,7 +124,7 @@ public class Repository {
         Statement st = cp.getDbConnection().createStatement();
         ResultSet resultSet = st.executeQuery(query);
 
-        while(resultSet.next()) {
+        while (resultSet.next()) {
             result.add(resultSet.getInt("order_number"));
         }
         return result;
