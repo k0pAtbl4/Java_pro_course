@@ -2,6 +2,8 @@ package lesson01;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Empty lesson :(");
+        String a = "hello";
+        String c = a + 3;
+        System.out.println(c);
     }
 }
